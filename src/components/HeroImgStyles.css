@@ -1,0 +1,295 @@
+.hero{
+    margin-top: 70px;
+    /* overflow-y: scroll;
+    scroll-snap-type: y mandatory; */
+}
+
+/* .section-1{
+    scroll-snap-type: start;
+} */
+
+.section-1{
+    display: flex;
+}
+
+.mask, .contentFirst{
+    /* display: inline-block;
+    justify-content: center; */
+    flex: 1;
+    
+}
+
+.mask{
+   /* margin-left: 130px;  */
+   width: 100%;
+   /* width: 100%; */
+}
+
+.contentFirst{
+    margin-left: 20px;
+    margin-top: 170px;
+
+}
+
+.contentFirst p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.hero-img{
+    display: flex;
+    /* margin: auto; */
+    margin-right: 25px;
+    width: 700px;
+
+}
+
+.confetti-purple{
+    width: 180px;
+    top: 100px;
+    right: 640px;
+    position: absolute;
+}
+
+.blue-star{
+    width: 150px;
+    top: 370px;
+    right: 670px;
+    position: absolute;
+}
+
+.yellow-star{
+    width: 150px;
+    rotate: 30deg;
+    top: 40px;
+    right: 280px;
+    position: absolute;
+}
+
+.mini-star{
+    width: 150px;
+    top: 500px;
+    right: 50px;
+    position: absolute;
+}
+
+.confetti-yellow{
+    width: 180px;
+    rotate: 20deg;
+    top: 600px;
+    right: 280px;
+    position: absolute;
+}
+
+.confetti-blue{
+    width: 180px;
+    top: 190px;
+    position: absolute;
+    right: 10px;
+}
+
+
+.btn, .btn-item{
+
+    border-radius: 25px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+
+/* .about-me-section, .section-1{
+    gap: 50px;
+} */
+
+.about-me-section{
+    margin-top: 50px;
+    /* width: 100%; */
+    /* height: 90vh; */
+    align-items: center;
+}
+
+.tab-box{
+    border: 2px solid #efcbad;
+    background-color: #ada1d2;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 60px;
+    width: 55%;
+
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tab{
+    background-color: pink;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e7bd9a;
+    border-top: none;
+    
+    cursor: pointer;
+    position: relative;
+}
+
+.active-tab{
+    border: none;
+    border-top-left-radius: 10px;
+    background-color: #ada1d2;
+}
+
+.active-tab::after{
+    border-top: 2px;
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.tab:last-child{
+    border-top-right-radius: 10px;
+}
+
+.tab:first-child{
+   border-top-left-radius: 10px;
+}
+
+.contents{
+    position: relative;
+}
+
+.content{
+    display: none;
+    position: relative;
+}
+
+ .active-content{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 1s ease-in-out;
+    animation: example 0.5s;
+}
+
+
+
+@keyframes example{
+    from{
+        top: 50px;
+        left: 0;
+        right: 0;
+        background: none;
+    }
+
+    to{
+        top: 0px;
+        left: 0;
+        right:0; 
+    }
+}
+
+
+
+
+/* .hero-box{
+    background-color: #f6b1b1;
+     height: 70vh;
+    margin-top: 50px;
+    border-radius: 15px;
+    margin-left: 60px;
+    width: 55%;
+    display: flex;
+
+
+} */
+
+.content, .active-content{
+    margin-top: 60px;
+}
+
+.block-tabs{
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/*.tabss{
+    /* display: flex;
+    justify-content: space-between;
+    background-color: #fcb8a6;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid pink;
+    width: 20%;
+    problem the tabs are  not 
+    
+
+}*/
+
+
+
+.about-me-section p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.about-me-section{
+    margin-left: 50px;
+    vertical-align: middle;
+    width: 30%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.tab-box, .about-me-section{
+    /* display: inline-block;*/
+    vertical-align: middle;
+    flex: 1;
+    
+
+    
+}
+
+.footer-wrap{
+    background-color: rgb(255, 230, 192);
+    width: 100%;
+}
+
+.footer{
+    display:block;
+    justify-content: center;
+
+}
+
+.footer h1, .footer p{
+    color: #9c9fd1;
+    display: flex;
+    justify-content: center;
+}
+
+.github, .github-text{
+    display: inline;
+    vertical-align: middle;
+}
+
+.email, .email-text{
+    display: inline;
+    vertical-align: middle;
+}
+
+.link, .link-text{
+    display: inline;
+    vertical-align: middle;
+}
