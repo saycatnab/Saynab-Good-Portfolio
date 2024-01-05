@@ -44,7 +44,9 @@ const HeroImg = () => {
             <div className="about-me">
                 <h1 width={100}>A Bit About Me</h1>
                 <p className="hello">Hi, I'm Saynab</p>
-                <p>A junior web developer + artist!</p>
+                <p>A junior <span className="webdev-text">web developer</span> + <span className="artist-text">artist!</span></p>
+                <p className="find-aboutpg">find more about me in the <Link to="/about" className="find-aboutpg-button">about me page
+                </Link></p>
             </div>
             <div className="tab-box">
                 <div className="tabs">
@@ -54,8 +56,8 @@ const HeroImg = () => {
                     <div onClick={()=> action(2)} className={`${state === 2 ? "tab active-tab" : "tab"}`}>
                         art
                     </div>
-                    <div >
-                        socials
+                    <div className="tab-element">
+                      —  O  X
                     </div>
                 </div>
 
